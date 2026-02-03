@@ -1,15 +1,18 @@
+/* ===== RESET & DASAR ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #4facfe, #00f2fe);
 }
 
+/* ===== HEADER ===== */
 header {
     text-align: center;
     color: white;
     padding: 40px 20px;
 }
 
+/* ===== NAVBAR ===== */
 nav {
     background: #ffffff;
     text-align: center;
@@ -22,20 +25,12 @@ nav a {
     color: #333;
     font-weight: bold;
 }
-.jadwal-img {
-    width: 100%;
-    max-width: 1000px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
 
 nav a:hover {
     color: #4facfe;
 }
 
+/* ===== CARD ===== */
 .card {
     background: white;
     margin: 20px;
@@ -43,23 +38,21 @@ nav a:hover {
     border-radius: 10px;
 }
 
-footer {
-    text-align: center;
-    color: white;
-    padding: 15px;
-}
+/* ===== JADWAL ===== */
 .jadwal-img {
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+/* ===== GALERI ===== */
 .galeri {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
     margin-top: 15px;
 }
 
@@ -70,7 +63,7 @@ footer {
 
 .galeri img {
     width: 100%;
-    max-height: 150px;
+    max-height: 100px;        /* UKURAN FOTO DIPERKECIL */
     object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
@@ -78,16 +71,36 @@ footer {
 }
 
 .galeri img:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
     box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
 
 .galeri figcaption {
-    font-size: 13px;
-    margin-top: 5px;
+    font-size: 12px;
+    margin-top: 6px;
     color: #555;
 }
 
+/* ===== ZOOM FOTO ===== */
+#zoomBox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
 
+#zoomBox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+}
 
-
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
