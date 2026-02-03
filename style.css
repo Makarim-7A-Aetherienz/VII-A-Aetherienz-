@@ -104,3 +104,22 @@ footer {
     color: white;
     padding: 15px;
 }
+.profil-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.profil-table th,
+.profil-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.profil-table th {
+    background-color: #f0f8ff;
+    width: 35%;
+}
+
+
