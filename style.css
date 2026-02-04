@@ -1,6 +1,9 @@
 /* ===== RESET & DASAR ===== */
 body {
     margin: 0;
+    min-height: 100vh;              /* INI KUNCI */
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #4facfe, #00f2fe);
 }
@@ -124,6 +127,7 @@ footer {
     background-color: #f0f8ff;
     width: 35%;
 }
+
 
 
 
