@@ -94,11 +94,18 @@
 </section>
 
 <footer>
-    <p>© 2026 VII-A (Aetherienz)</p>
+    <p>© <span id="year"></span> VII-A (Aetherienz)</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </footer>
 
 </body>
 </html>
+
 
 
 
